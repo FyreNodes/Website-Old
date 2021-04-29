@@ -1,0 +1,8 @@
+RewriteEngine on
+RewriteBase /
+RewriteRule ^tos$ terms.html
+RewriteRule ^terms$ terms.html
+RewriteRule ^refund$ refund.html
+RewriteRule ^privacy$ privacy.html
+RewriteRule ^features$ features.html
+RewriteRule ^team$ team.html
