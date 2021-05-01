@@ -5,4 +5,4 @@ RewriteRule ^terms$ terms.html
 RewriteRule ^refund$ refund.html
 RewriteRule ^privacy$ privacy.html
 RewriteRule ^features$ features.html
-RewriteRule ^team$ team.html
+RewriteRule ^contact$ contact.html
