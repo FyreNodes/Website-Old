@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2021-05-10 23:53:35
+/* Smarty version 3.1.36, created on 2021-05-08 09:00:03
   from 'mailMessage:subject' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_6099c77f413f78_37449173',
+  'unifunc' => 'content_60965313bddde2_70296130',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '3658c8804036d8e01de31155025e7476dc5a36b3' => 
     array (
       0 => 'mailMessage:subject',
-      1 => 1620690815,
+      1 => 1620464403,
       2 => 'mailMessage',
     ),
   ),
@@ -20,6 +20,6 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6099c77f413f78_37449173 (Smarty_Internal_Template $_smarty_tpl) {
-?>New Product Information<?php }
+function content_60965313bddde2_70296130 (Smarty_Internal_Template $_smarty_tpl) {
+?>Customer Invoice<?php }
 }

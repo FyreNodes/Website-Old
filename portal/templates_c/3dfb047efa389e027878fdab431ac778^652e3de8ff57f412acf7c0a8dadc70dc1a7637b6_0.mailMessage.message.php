@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2021-05-10 23:53:35
+/* Smarty version 3.1.36, created on 2021-05-07 18:36:40
   from 'mailMessage:message' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_6099c77f41bf13_27600548',
+  'unifunc' => 'content_609588b84454f4_81293580',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '652e3de8ff57f412acf7c0a8dadc70dc1a7637b6' => 
     array (
       0 => 'mailMessage:message',
-      1 => 1620690815,
+      1 => 1620412600,
       2 => 'mailMessage',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6099c77f41bf13_27600548 (Smarty_Internal_Template $_smarty_tpl) {
+function content_609588b84454f4_81293580 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
@@ -63,18 +63,21 @@ function content_6099c77f41bf13_27600548 (Smarty_Internal_Template $_smarty_tpl)
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
                                         <tr>
                                             <td valign="top" class="bodyContent">
-<!-- message header end --><p>Hello, <?php echo $_smarty_tpl->tpl_vars['client_name']->value;?>
-!</p>
-<p>Your order for <?php echo $_smarty_tpl->tpl_vars['service_product_name']->value;?>
- has now been activated with DijxCloud.</p>
-<p>You can now log in at <a href="https://panel.dijxcloud.com">https://panel.dijxcloud.com</a> with the email and password you used to buy this product.</p>
-<p>Product/Service: <?php echo $_smarty_tpl->tpl_vars['service_product_name']->value;?>
-<br />Payment Method: <?php echo $_smarty_tpl->tpl_vars['service_payment_method']->value;?>
-<br />Amount: <?php echo $_smarty_tpl->tpl_vars['service_recurring_amount']->value;?>
-<br />Billing Cycle: <?php echo $_smarty_tpl->tpl_vars['service_billing_cycle']->value;?>
-<br />Next Due Date: <?php echo $_smarty_tpl->tpl_vars['service_next_due_date']->value;?>
+<!-- message header end --><p>Dear <?php echo $_smarty_tpl->tpl_vars['client_name']->value;?>
+,</p>
+<p>This is a payment receipt for Invoice <?php echo $_smarty_tpl->tpl_vars['invoice_num']->value;?>
+ sent on <?php echo $_smarty_tpl->tpl_vars['invoice_date_created']->value;?>
 </p>
-<p>Thanks for choosing DijxCloud! </p>
+<p><?php echo $_smarty_tpl->tpl_vars['invoice_html_contents']->value;?>
+</p>
+<p>Amount: <?php echo $_smarty_tpl->tpl_vars['invoice_last_payment_amount']->value;?>
+<br />Transaction #: <?php echo $_smarty_tpl->tpl_vars['invoice_last_payment_transid']->value;?>
+<br />Total Paid: <?php echo $_smarty_tpl->tpl_vars['invoice_amount_paid']->value;?>
+<br />Remaining Balance: <?php echo $_smarty_tpl->tpl_vars['invoice_balance']->value;?>
+<br />Status: <?php echo $_smarty_tpl->tpl_vars['invoice_status']->value;?>
+</p>
+<p>You may review your invoice history at any time by logging in to your client area.</p>
+<p>Note: This email will serve as an official receipt for this payment.</p>
 <p><?php echo $_smarty_tpl->tpl_vars['signature']->value;?>
 </p><!-- message footer start -->
 </td>
